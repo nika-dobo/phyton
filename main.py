@@ -181,3 +181,18 @@ while i < n:
     i += 1
 
 print(user_list)
+
+
+print(" ")
+
+word = 'Football, basketball, skate'
+# print(word.count('!')) # ითვლის რამდენი ლიმბოლა სიტყვაში
+# print(word.capitalize()) # პირვე ასოს დიდად აქცევს
+# print(word.find('a')) #ეცებს a-ს
+hobby = word.split(', ') #აქცევს სტრინგს ლისტად
+
+for i in range(len (hobby)):
+    hobby[i] = hobby[i].capitalize()
+
+print(hobby)
+
