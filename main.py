@@ -352,6 +352,20 @@
 
 
 #set და frozenset
+#არის მსაგავსი list-ის და tuple-ის ნაირი. მაგრამ ერთნაირი ელემენტები იშლება
 
+data = set("hello")
+print(data)
 
+print(" ")
 
+data2 = {2, 4, 2, 4, 6, 3, 7, 1, 7, 8 }
+data2.add(43)# 1 ელემენტის დამატება
+data2.update(34, True, 4.8)# რამდენიმე ელემნტის დამატება
+data2.remove(True)#წაშლა იმ ელემენტის რომელსაც მივუთითებს
+data2.pop()#ბოლო ელემენტის წაშლა
+#data2.clear()#მთლიანად წაშლა
+print(data2)
+
+nums = [2, 4, 2, 6, 7, 43, 85, 8]
+nums = set(nums)#list-ს ვაქცევს setად
