@@ -1,3 +1,13 @@
+
+print("lern with: @itproge")
+print("chanal link: https://www.youtube.com/@itproger")
+print("video link: https://www.youtube.com/watch?v=34Rp6KVGIEM&list=PLDyJYA6aTY1lPWXBPk0gw6gR8fEtPDGKa&index=1 ")
+
+print("")
+print("")
+print("")
+print("")
+
 # print("rezultati: ", 5, 7,  ".", sep="|", end="\n" ) 
 
 # # sep
