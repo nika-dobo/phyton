@@ -475,3 +475,75 @@ print("")
 
 # resu = func(5, 5)
 # print(resu)
+
+
+# #work with file
+
+
+# data = input("whrite text:")
+
+# file = open("data/text.txt", "w")#იხსნება ფაილი და თუ არ გაქ შექმნილი მაშინ შეიქმნება
+
+# # w - წერის გახსნა, ფაილის შინაარსი წაიშლება, თუ ფაილი არ არსებობს, იქმნება ახალი.
+# # r - გახსენით კითხვისთვის (არის ნაგულისხმევი მნიშვნელობა).
+# # x - გახსენით წერა, თუ ფაილი არ არსებობს, წინააღმდეგ შემთხვევაში გამონაკლისი დააგდეს.
+# # a - გახსნა უნდა ჩაიწეროს, ინფორმაცია ემატება ფაილის ბოლოს.
+# # b - გახსნა ორობითი რეჟიმში.
+# # t - ტექსტის რეჟიმში გახსნა (არის ნაგულისხმევი მნიშვნელობა).
+# # + - კითხვისა და წერის გახსნა
+
+# file.write(data + "\n")
+# file.write("!!!")
+
+# file.close()
+
+# print(" ") 
+
+# file = open("data/text.txt", "r")
+
+# print(file.read())# თუ მივუთითებთ პარამეტრებს ფჩხილებში მაშინ მაგდენ სიმბლოს გამოიტასნ და თუ ცარიელია მაშინ ყველაფერს გამოიტანს
+
+# print(" ") 
+
+
+# for line in file:
+#     print(line, end="")
+
+
+# file.close()
+
+
+#try end except
+
+
+try:
+    x = int(input("enter number: "))
+    x += 5
+    print(x)
+except ValueError:
+    print("enter better number!")
+
+
+y = 0
+
+while y == 0:
+    try:
+        y = int(input("enter number: "))
+        y += 5
+        print(x)
+    except ValueError:
+        print("enter better number!")
+
+
+try:
+    c = 5 / 0
+    c = int(input("enter number: "))
+except ZeroDivisionError:
+    print("you cent / on 0")
+except ValueError:
+    print("enter better number!")   
+else:
+    print("else")    
+finally:
+    print("finally")        
+    
