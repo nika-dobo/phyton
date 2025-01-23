@@ -548,7 +548,6 @@ print("")
 #     print("finally")        
 
 
-
 # # with და as
 # #იგივე არის რაც .close()    
 
