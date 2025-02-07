@@ -4,4 +4,4 @@ print(my.name)
 
 my.hello()
 
-my.add_three_numbers(5, 6, 7)
+print(my.add_three_numbers(5, 6, 7))
