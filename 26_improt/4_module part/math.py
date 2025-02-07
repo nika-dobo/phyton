@@ -4,5 +4,3 @@ from math import sqrt as s, ceil  # ამ შემტხვევში ჩვ
 # ceil ეს ფუნქცია ამგვალებს რიცხვს
 
 print(ceil(s(100)))
-
-
