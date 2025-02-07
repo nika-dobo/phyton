@@ -595,3 +595,26 @@ print("")
 # # ceil ეს ფუნქცია ამგვალებს რიცხვს
 
 # print(ceil(s(100)))
+
+# print(" ") 
+
+# # mymodule # ჩვენი მოდულის შექმნა
+
+# name = "Bob"
+
+# def hello():
+#     print("Hello", name)
+
+# def add_three_numbers(a, b, z):
+#     if a != 0 and b != 0 and z != 0:
+#         return a + b + z
+#     else:
+#         return "some is zero"
+
+# import mymodule as my
+
+# print(name)
+
+# my.hello()
+
+# my.add_three_numbers(5, 6, 7)
