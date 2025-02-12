@@ -10,3 +10,8 @@ def add_three_numbers(a, b, z):
         return a + b + z
     else:
         return "some is zero"
+    
+
+print(name)   
+hello()
+print(add_three_numbers(4,5,6))
