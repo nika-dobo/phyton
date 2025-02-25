@@ -82,3 +82,15 @@ lis = [3, 5, "str", True, 5.3]
 print(lis[2::2])
 print(lis[::-1])
 
+#.translate()შლის ყველა სიმბოლოს რომელიც მითითებულია
+#მაგალითი
+print(" ")
+string = "hello world"
+print(string.translate({ord("h"): None, ord("l"): None}))
+
+
+#.endswith() ამოწებს რომელი სიმბოლოთი დასრულდა სტრინგი
+#მაგალითი
+print(" ")
+string = "hello world"
+print(string.endswith("d"))
