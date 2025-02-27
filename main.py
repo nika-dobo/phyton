@@ -1,3 +1,6 @@
+import webbrowser
+
+webbrowser.open("https://itproger.com")
 
 print("lern with: @itproge")
 print("chanal link: https://www.youtube.com/@itproger")
@@ -619,3 +622,117 @@ print("")
 
 # my.add_three_numbers(5, 6, 7)
 
+# #class
+
+# class cat:
+#     name = None
+#     age = None
+#     ishappy = None
+
+#     def set_data(self, name, age, ishappy):
+#         self.name = name
+#         self.age = age
+#         self.ishappy = ishappy
+
+#     def get_data(self):
+#         print("name:", self.name, "age:", self.age, "ishappy:", self.ishappy)
+
+# cat1 = cat()
+# cat1.set_data("jopa", 3, True)
+
+
+# cat2 = cat()
+# cat2.set_data("barsik", 5, False)
+
+# cat1.get_data()
+# cat2.get_data()
+
+# # # construqtor
+
+# class cat:
+#     name = None
+#     age = None
+#     ishappy = None
+
+#     def __init__(self, name, age, ishappy):# ამ ფუნქციაში შევქმენით ცვლადები რომლებიც შემოვიტანეთ კლასის შექმნის დროს და შევინახეთ მათ მნიშვნელობები და გამოძახების დროს როდესაც ვუთითებთ ნებისმერ ცვლადს მა კლასს შეგვიძლია პირდაპირ კლასში მოხუთითოთ ყველაფერი
+#         # self.name = name
+#         # self.age = age
+#         # self.ishappy = ishappy
+
+#         self.set_data(name = None, age = None, ishappy = None) # ამ None დახმარებით შეგვიძლია მაოვიძახოთ 0 ან 1 ან 2 ხვალადი ერორის გამრეშე ეს შეგვიძლია მამოვიენოთ __init__ შიც მაგრამ None მაგივრად სხვა რემეც შეგვიძლია მივუთითოთ
+
+#         self.get_data()
+
+#     def set_data(self, name, age, ishappy):
+#         self.name = name
+#         self.age = age
+#         self.ishappy = ishappy
+
+#     def get_data(self):
+#         print("name:", self.name, "age:", self.age, "ishappy:", self.ishappy)
+
+# cat1 = cat("jopa", 3, True)
+
+
+
+# cat2 = cat("barsik", 5, False)
+
+
+
+# #Inheritance encapsulation polymorphism
+
+# class building:
+#     __year = None
+#     __city = None
+#     # __ ეს არის დაცვა მაგრამ კარგად არ არის გაკეთბული
+
+#     def __init__(self, year, city):
+#         self.year = year
+#         self.city = city
+
+#     def get_info(self):
+#         print("year:", self.year, "city:", self.city)
+
+# class shool(building):
+#     pupiles = 0
+
+#     def __init__(self, year, city, pupiles):
+#         super(school, self).__init__(year, city)# ამითი ვეხმიანებით მთავარ კლასს ანუ მშობელ კლას რომ მის პარამეტრები მივიღოთ 
+#         self.pupiles = pupiles
+
+#     def get_info(self):
+#         super().get_info()# aაქ შეგვიძლია დავწეროთ ასე print("year:", self.year, "city:", self.city)
+#         print("pupiles:", self.pupiles)
+
+    
+
+# class house(building):# აქ თუ building ამის მაგივრად მივუთითებთ shool მაშინ შეხება გვექნებ shool ნაც და building ნაც
+#     pass
+
+# class shop(building):
+#     pass
+
+# school = building(100, 1990, "tbilisi")
+# house = building(2000, "batumi")
+# shop = building(2010, "kutaisi")
+
+
+
+# #decorator
+
+# # import webbrowser
+
+# def validator(func):
+#     def wrpper(url):
+#         if "." in url:
+#             func(url)
+#         else:    
+#             print("url is not valid")
+#     return wrpper
+
+
+# @validator#decorator
+# def opep_url(url):
+#     webbrowser.open(url)
+
+# opep_url("https://www.google.com") #ხსნის ლინს რასაც მივუთითებთ
