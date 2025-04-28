@@ -736,12 +736,3 @@ print("")
 #     webbrowser.open(url)
 
 # opep_url("https://www.google.com") #ხსნის ლინს რასაც მივუთითებთ
-
-def ips_between(start, end):
-    start = start.split(".")
-    end = end.split(".")
-    
-    num1 = int(start[0]) ** 4 + int(start[1]) ** 3 + int(start[2]) ** 2 + int(start[3])
-    num2 = int(start[0]) ** 4 + int(start[1]) ** 3 + int(start[2]) ** 2 + int(start[3])
-    
-    return num2 - num1
